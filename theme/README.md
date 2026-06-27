@@ -11,6 +11,16 @@ Minimalny motyw blokowy dla WordPressa 6.6 lub nowszego.
 5. Utwórz menu oraz strony odpowiadające adresom użytym we wzorcach.
 6. Ustaw stronę statyczną jako stronę główną.
 
+W środowisku WordPress Studio początkową strukturę stron można utworzyć
+powtarzalnym skryptem:
+
+```bash
+studio wp eval-file /pełna/ścieżka/do/scripts/seed-site.php
+```
+
+Skrypt nie nadpisuje istniejących stron, dlatego można uruchamiać go ponownie
+bez utraty treści wprowadzonych przez redaktorów.
+
 ## Obecny zakres
 
 - globalna paleta, typografia i odstępy w `theme.json`;
