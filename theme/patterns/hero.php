@@ -1,69 +1,70 @@
 <?php
 /**
- * Title: Otwarcie strony głównej
+ * Title: Premium hero
  * Slug: school-page/hero
  * Categories: banner, featured
  * Inserter: no
  */
 ?>
 
-<!-- wp:group {"tagName":"section","align":"full","className":"school-hero school-section","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
-<section class="wp-block-group alignfull school-hero school-section" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)">
-	<!-- wp:group {"align":"wide","className":"school-hero__grid","layout":{"type":"default"}} -->
-	<div class="wp-block-group alignwide school-hero__grid">
-		<!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
-		<div class="wp-block-group">
-			<!-- wp:paragraph {"className":"school-hero__eyebrow"} -->
-			<p class="school-hero__eyebrow">Ciepło, rozwój i wartości</p>
+<!-- wp:group {"tagName":"section","align":"full","className":"premium-hero school-section","layout":{"type":"constrained"}} -->
+<section class="wp-block-group alignfull premium-hero school-section">
+	<!-- wp:group {"align":"wide","className":"premium-hero__grid","layout":{"type":"default"}} -->
+	<div class="wp-block-group alignwide premium-hero__grid">
+		<!-- wp:group {"className":"premium-hero__content","layout":{"type":"constrained","justifyContent":"left"}} -->
+		<div class="wp-block-group premium-hero__content">
+			<!-- wp:paragraph {"className":"premium-eyebrow"} -->
+			<p class="premium-eyebrow"><span>●</span> Przedszkole Publiczne św. Józefa · Rzeszów</p>
 			<!-- /wp:paragraph -->
 
-			<!-- wp:heading {"level":1,"fontSize":"display"} -->
-			<h1 class="wp-block-heading has-display-font-size">Przedszkole Publiczne św. Józefa w Rzeszowie</h1>
+			<!-- wp:heading {"level":1,"className":"premium-hero__title"} -->
+			<h1 class="wp-block-heading premium-hero__title">Dzieciństwo, które <em>zostaje w sercu.</em></h1>
 			<!-- /wp:heading -->
 
-			<!-- wp:paragraph {"fontSize":"large"} -->
-			<p class="has-large-font-size">Tworzymy bezpieczne i rodzinne miejsce, w którym każde dziecko może rozwijać się we własnym tempie.</p>
+			<!-- wp:paragraph {"className":"premium-hero__intro","fontSize":"large"} -->
+			<p class="premium-hero__intro has-large-font-size">Każde dziecko jest inne. Dlatego tworzymy bezpieczną przestrzeń, w której może odkrywać świat, budować relacje i rosnąć we własnym tempie.</p>
 			<!-- /wp:paragraph -->
 
-			<!-- wp:buttons -->
-			<div class="wp-block-buttons">
-				<!-- wp:button -->
-				<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/o-przedszkolu/">Poznaj nasze przedszkole</a></div>
+			<!-- wp:buttons {"className":"premium-hero__actions"} -->
+			<div class="wp-block-buttons premium-hero__actions">
+				<!-- wp:button {"className":"is-style-fill"} -->
+				<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button" href="/o-przedszkolu/">Poznaj nas bliżej <span aria-hidden="true">→</span></a></div>
 				<!-- /wp:button -->
 
-				<!-- wp:button {"backgroundColor":"brick"} -->
-				<div class="wp-block-button"><a class="wp-block-button__link has-brick-background-color has-background wp-element-button" href="/rekrutacja/">Sprawdź rekrutację</a></div>
+				<!-- wp:button {"className":"is-style-outline"} -->
+				<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/rekrutacja/">Rekrutacja 2026/27</a></div>
 				<!-- /wp:button -->
 			</div>
 			<!-- /wp:buttons -->
+
+			<!-- wp:group {"className":"premium-trust","layout":{"type":"flex","flexWrap":"wrap"}} -->
+			<div class="wp-block-group premium-trust">
+				<!-- wp:paragraph --><p><strong>102 lata</strong><br><span>historii i tradycji</span></p><!-- /wp:paragraph -->
+				<!-- wp:paragraph --><p><strong>6 grup</strong><br><span>kameralna opieka</span></p><!-- /wp:paragraph -->
+				<!-- wp:paragraph --><p><strong>6:30–17:00</strong><br><span>jesteśmy dla Was</span></p><!-- /wp:paragraph -->
+			</div>
+			<!-- /wp:group -->
 		</div>
 		<!-- /wp:group -->
 
-		<!-- wp:group {"className":"school-hero__card","layout":{"type":"constrained"}} -->
-		<div class="wp-block-group school-hero__card">
-			<!-- wp:heading {"level":2,"fontSize":"x-large"} -->
-			<h2 class="wp-block-heading has-x-large-font-size">Najważniejsze informacje</h2>
-			<!-- /wp:heading -->
+		<!-- wp:group {"className":"premium-hero__visual","layout":{"type":"default"}} -->
+		<div class="wp-block-group premium-hero__visual">
+			<!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"premium-hero__illustration"} -->
+			<figure class="wp-block-image size-full premium-hero__illustration"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/hero-playground.svg' ) ); ?>" alt="Kolorowa ilustracja przedszkola, ogrodu i zabawek"></figure>
+			<!-- /wp:image -->
 
-			<!-- wp:list -->
-			<ul>
-				<!-- wp:list-item -->
-				<li>Opieka od 6:30 do 17:00</li>
-				<!-- /wp:list-item -->
+			<!-- wp:group {"className":"premium-float-card premium-float-card--top","backgroundColor":"white","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+			<div class="wp-block-group premium-float-card premium-float-card--top has-white-background-color has-background">
+				<!-- wp:paragraph {"className":"premium-float-card__icon"} --><p class="premium-float-card__icon">♥</p><!-- /wp:paragraph -->
+				<!-- wp:paragraph --><p><strong>Rodzinna atmosfera</strong><br><span>blisko dziecka i rodzica</span></p><!-- /wp:paragraph -->
+			</div>
+			<!-- /wp:group -->
 
-				<!-- wp:list-item -->
-				<li>Język angielski i rytmika</li>
-				<!-- /wp:list-item -->
-
-				<!-- wp:list-item -->
-				<li>Wsparcie pedagoga i logopedy</li>
-				<!-- /wp:list-item -->
-
-				<!-- wp:list-item -->
-				<li>Sześć grup wiekowych</li>
-				<!-- /wp:list-item -->
-			</ul>
-			<!-- /wp:list -->
+			<!-- wp:group {"className":"premium-float-card premium-float-card--bottom","backgroundColor":"gold","layout":{"type":"constrained"}} -->
+			<div class="wp-block-group premium-float-card premium-float-card--bottom has-gold-background-color has-background">
+				<!-- wp:paragraph --><p><strong>186</strong><br><span>radosnych dzieci</span></p><!-- /wp:paragraph -->
+			</div>
+			<!-- /wp:group -->
 		</div>
 		<!-- /wp:group -->
 	</div>

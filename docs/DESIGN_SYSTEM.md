@@ -1,75 +1,78 @@
 # System wizualny
 
-## Charakter
+## Kierunek: ciepły editorial
 
-Projekt ma być ciepły i przyjazny, ale nie infantylny. Zieleń nawiązuje do
-obecnego logo, kremowe tło łagodzi kontrast dużych powierzchni, a złoto
-i ceglasty kolor służą wyłącznie jako kontrolowane akcenty.
+Strona łączy wiarygodność placówki z energią dzieciństwa. Duże, redakcyjne
+nagłówki nadają jej własny charakter, a proste ilustracje, miękkie kształty
+i kolorowe karty budują pogodny klimat bez infantylności.
+
+Najważniejsze zasady:
+
+- dużo oddechu i wyraźna hierarchia;
+- asymetria kontrolowana przez spójną siatkę;
+- mocne wezwania do działania i szybki dostęp do informacji dla rodziców;
+- dekoracje wspierają treść, ale nigdy nie utrudniają jej odczytania;
+- fotografie dzieci mogą być dodawane wyłącznie po potwierdzeniu zgód.
 
 ## Kolory
 
 | Rola | Wartość | Zastosowanie |
 | --- | --- | --- |
-| Zieleń główna | `#1F5D42` | menu, przyciski, nagłówki |
-| Kremowe tło | `#FFF8EA` | tło strony i sekcji |
-| Tekst | `#24312B` | główny tekst |
-| Jasna szałwia | `#DDEBDD` | karty i wyróżnienia |
-| Ciepłe złoto | `#E8B84A` | ikony i akcenty z ciemnym tekstem |
-| Ceglasty | `#B6533C` | pilne komunikaty i drugie działanie |
-| Biel | `#FFFFFF` | tekst na zieleni i ceglastym |
+| Głęboka zieleń | `#165B3F` | przyciski, pasek kontaktowy, stopka |
+| Zieleń ciemna | `#0D3D2B` | duże powierzchnie i mocny kontrast |
+| Papier | `#FBFAF6` | główne tło |
+| Krem | `#FFF9EC` | hero i spokojne sekcje |
+| Grafit | `#1B2A24` | tekst |
+| Koral | `#C85D45` | akcent marki i ważne działania |
+| Niebo | `#B8D8E8` | pogodne karty i ilustracje |
+| Ciepły róż | `#F3C7B7` | delikatne wyróżnienia |
+| Słońce | `#F1C64F` | małe akcenty i podkreślenia |
+| Szałwia | `#D5E6D3` | spokojne karty informacyjne |
 
-Sprawdzone kontrasty:
-
-- biel na zieleni: 7,77:1;
-- zieleń na kremowym tle: 7,35:1;
-- grafit na kremowym tle: 12,82:1;
-- grafit na złocie: 7,35:1;
-- biel na ceglastym: 4,89:1.
+Biały tekst jest używany tylko na głębokiej lub ciemnej zieleni. Żółty,
+niebieski i różowy zawsze otrzymują ciemny tekst.
 
 ## Typografia
 
-- nagłówki: `Nunito Sans`, wagi 600 i 700;
-- tekst: `Source Sans 3`, wagi 400 i 600;
-- fonty przechowywane lokalnie jako WOFF2;
-- tekst podstawowy: 18 px, na małych ekranach nie mniej niż 17 px;
-- interlinia tekstu: około 1,6;
-- optymalna szerokość tekstu: 65–72 znaki;
-- bez pisma odręcznego i długich fragmentów pisanych wielkimi literami.
+- nagłówki: systemowy krój editorial — `Iowan Old Style`, `Palatino Linotype`,
+  `Book Antiqua`, `Georgia`, serif;
+- tekst i interfejs: `Aptos`, `Segoe UI Variable`, `Segoe UI`, sans-serif;
+- tekst podstawowy: 17–18 px, interlinia około 1,6;
+- nagłówek hero jest płynny i dopasowuje się do szerokości ekranu;
+- szerokość dłuższego tekstu nie przekracza około 65 znaków;
+- nie pobieramy fontów z zewnętrznych serwerów, więc strona pozostaje szybka
+  i nie wysyła danych użytkownika do dostawcy fontów.
 
-Przed implementacją fontów trzeba potwierdzić ich licencje i przygotować
-systemowe fonty zapasowe.
+## Kształty i odstępy
 
-## Odstępy
-
-Stosujemy skalę opartą na 4 px:
-
-`4, 8, 12, 16, 24, 32, 48, 64, 96`
-
-Sekcje powinny mieć wyraźny oddech, ale nie mogą wydłużać strony samą
-dekoracją.
+- skala odstępów: `4, 8, 12, 16, 24, 32, 48, 64, 96`;
+- duże sekcje mają zaokrąglenia 28–56 px;
+- karty korzystają z miękkich cieni i cienkich, półprzezroczystych obramowań;
+- przyciski główne są zwarte, czytelne i mają obszar dotykowy minimum 44 px;
+- elementy dekoracyjne mogą być lekko obrócone, ale tekst pozostaje prosty.
 
 ## Komponenty
 
-- przycisk podstawowy i dodatkowy;
-- link tekstowy z wyraźnym stanem fokusu;
-- karta aktualności;
-- karta wydarzenia;
-- ważny komunikat;
-- zestaw szybkich skrótów;
-- lista dokumentów;
-- formularz z komunikatami błędów;
-- okruszki nawigacyjne;
-- paginacja;
-- nagłówek i stopka;
-- menu mobilne.
+- pasek szybkiego kontaktu;
+- nagłówek z sygnetem i rozwijanym menu;
+- asymetryczny hero z ilustracją SVG;
+- komunikat rekrutacyjny;
+- cztery kolorowe skróty dla rodziców;
+- sekcja wartości w układzie bento;
+- karty aktualności;
+- panel kontaktowy z drogą dojazdu;
+- rozbudowana stopka;
+- pełnoekranowe menu mobilne.
 
-## Zasady dostępności interfejsu
+## Dostępność
 
-- obszar dotykowy co najmniej 44 × 44 px;
-- widoczny fokus o kontraście co najmniej 3:1;
-- informacja nie może zależeć wyłącznie od koloru;
-- tekst nie jest umieszczany bezpośrednio na złożonym zdjęciu;
+- widoczny link „Przejdź do treści”;
+- jeden nagłówek `h1` na stronie;
+- widoczny fokus klawiatury;
+- informacja nie zależy wyłącznie od koloru;
+- tekst nie jest nakładany na złożone fotografie;
 - animacje respektują `prefers-reduced-motion`;
-- automatyczne przewijanie treści jest wyłączone;
-- komunikaty błędów są konkretne i powiązane z polem;
-- ikona bez tekstu ma dostępną nazwę.
+- brak automatycznych karuzel i samoczynnie odtwarzanych multimediów;
+- ikony dekoracyjne są pomijane przez czytniki ekranu, a funkcjonalne mają
+  dostępną nazwę;
+- układ jest testowany bez poziomego przewijania przy szerokości 390 px.

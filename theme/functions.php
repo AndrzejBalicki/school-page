@@ -16,7 +16,12 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 function school_page_setup() {
 	add_theme_support( 'editor-styles' );
-	add_editor_style( get_stylesheet_uri() );
+	add_editor_style(
+		array(
+			'style.css',
+			'assets/css/premium.css',
+		)
+	);
 	load_theme_textdomain( 'school-page', get_template_directory() . '/languages' );
 }
 add_action( 'after_setup_theme', 'school_page_setup' );
@@ -33,6 +38,13 @@ function school_page_enqueue_styles() {
 		'school-page-style',
 		get_stylesheet_uri(),
 		array(),
+		$theme->get( 'Version' )
+	);
+
+	wp_enqueue_style(
+		'school-page-premium',
+		get_theme_file_uri( 'assets/css/premium.css' ),
+		array( 'school-page-style' ),
 		$theme->get( 'Version' )
 	);
 }
