@@ -1,36 +1,59 @@
-<!-- wp:group {"align":"full","className":"school-utility-bar","backgroundColor":"primary","textColor":"white","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull school-utility-bar has-white-color has-primary-background-color has-text-color has-background">
-	<!-- wp:group {"align":"wide","className":"school-utility-bar__inner","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
-	<div class="wp-block-group alignwide school-utility-bar__inner">
-		<!-- wp:paragraph -->
-		<p>ul. Paderewskiego 71, 35-330 Rzeszów</p>
+<!-- wp:group {"align":"full","className":"premium-utility","backgroundColor":"primary","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull premium-utility has-primary-background-color has-background">
+	<!-- wp:group {"align":"wide","className":"premium-utility__inner","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+	<div class="wp-block-group alignwide premium-utility__inner">
+		<!-- wp:paragraph {"fontSize":"small"} -->
+		<p class="has-small-font-size">Rzeszów · Słocina · ul. Paderewskiego 71</p>
 		<!-- /wp:paragraph -->
 
-		<!-- wp:paragraph -->
-		<p>Otwarte od poniedziałku do piątku: 6:30–17:00</p>
-		<!-- /wp:paragraph -->
+		<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
+		<div class="wp-block-group">
+			<!-- wp:paragraph {"fontSize":"small"} -->
+			<p class="has-small-font-size">Pon.–pt. 6:30–17:00</p>
+			<!-- /wp:paragraph -->
 
-		<!-- wp:paragraph -->
-		<p><a href="tel:+48178571816">+48 17 857 18 16</a></p>
-		<!-- /wp:paragraph -->
+			<!-- wp:paragraph {"fontSize":"small"} -->
+			<p class="has-small-font-size"><a href="tel:+48178571816">+48 17 857 18 16</a></p>
+			<!-- /wp:paragraph -->
+
+			<!-- wp:paragraph {"fontSize":"small"} -->
+			<p class="has-small-font-size"><a href="https://edziecko.edu.pl/">E-Dziecko ↗</a></p>
+			<!-- /wp:paragraph -->
+		</div>
+		<!-- /wp:group -->
 	</div>
 	<!-- /wp:group -->
 </div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"school-header__inner","backgroundColor":"white","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull school-header__inner has-white-background-color has-background">
-	<!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
-	<div class="wp-block-group alignwide">
-		<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-		<div class="wp-block-group">
-			<!-- wp:site-logo {"width":72,"shouldSyncIcon":true} /-->
+<!-- wp:group {"align":"full","className":"premium-header","backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull premium-header has-white-background-color has-background">
+	<!-- wp:group {"align":"wide","className":"premium-header__inner","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+	<div class="wp-block-group alignwide premium-header__inner">
+		<!-- wp:group {"className":"premium-brand","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+		<div class="wp-block-group premium-brand">
+			<!-- wp:html -->
+			<a class="premium-brand__mark" href="/" aria-label="Strona główna">
+				<svg viewBox="0 0 56 56" aria-hidden="true" focusable="false">
+					<path d="M13 27 28 13l15 14v17H13Z" fill="currentColor"/>
+					<path d="M23 44V31h10v13M28 9v12M23 14h10" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+			</a>
+			<!-- /wp:html -->
 
-			<!-- wp:site-title {"level":0,"fontSize":"large"} /-->
+			<!-- wp:group {"className":"premium-brand__text","layout":{"type":"constrained"}} -->
+			<div class="wp-block-group premium-brand__text">
+				<!-- wp:site-title {"level":0} /-->
+
+				<!-- wp:paragraph -->
+				<p>Radość, bliskość, wartości</p>
+				<!-- /wp:paragraph -->
+			</div>
+			<!-- /wp:group -->
 		</div>
 		<!-- /wp:group -->
 
-		<!-- wp:navigation {"overlayMenu":"mobile","className":"school-primary-nav","layout":{"type":"flex","justifyContent":"right","flexWrap":"nowrap"},"ariaLabel":"Główne menu"} -->
+		<!-- wp:navigation {"overlayMenu":"mobile","className":"school-primary-nav premium-nav","layout":{"type":"flex","justifyContent":"right","flexWrap":"nowrap"},"ariaLabel":"Główne menu"} -->
 			<!-- wp:navigation-link {"label":"O przedszkolu","url":"/o-przedszkolu/","kind":"custom"} /-->
 
 			<!-- wp:navigation-submenu {"label":"Dla rodziców","url":"/dla-rodzicow/","kind":"custom","isTopLevelLink":true} -->
@@ -45,11 +68,11 @@
 
 			<!-- wp:navigation-link {"label":"Oferta","url":"/oferta/","kind":"custom"} /-->
 
-			<!-- wp:navigation-link {"label":"Rekrutacja","url":"/rekrutacja/","kind":"custom"} /-->
-
 			<!-- wp:navigation-link {"label":"Aktualności","url":"/aktualnosci/","kind":"custom"} /-->
 
 			<!-- wp:navigation-link {"label":"Kontakt","url":"/kontakt/","kind":"custom"} /-->
+
+			<!-- wp:navigation-link {"label":"Rekrutacja","url":"/rekrutacja/","kind":"custom","className":"premium-nav__cta"} /-->
 		<!-- /wp:navigation -->
 	</div>
 	<!-- /wp:group -->

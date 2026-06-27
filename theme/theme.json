@@ -15,33 +15,43 @@
       "defaultPalette": false,
       "palette": [
         {
-          "color": "#1F5D42",
-          "name": "Zieleń główna",
+          "color": "#165B3F",
+          "name": "Głęboka zieleń",
           "slug": "primary"
         },
         {
-          "color": "#FFF8EA",
+          "color": "#FFF9EC",
           "name": "Kremowe tło",
           "slug": "cream"
         },
         {
-          "color": "#24312B",
+          "color": "#1B2A24",
           "name": "Tekst",
           "slug": "text"
         },
         {
-          "color": "#DDEBDD",
+          "color": "#D5E6D3",
           "name": "Jasna szałwia",
           "slug": "sage"
         },
         {
-          "color": "#E8B84A",
-          "name": "Ciepłe złoto",
+          "color": "#B8D8E8",
+          "name": "Pogodne niebo",
+          "slug": "sky"
+        },
+        {
+          "color": "#F3C7B7",
+          "name": "Ciepły róż",
+          "slug": "rose"
+        },
+        {
+          "color": "#F1C64F",
+          "name": "Słońce",
           "slug": "gold"
         },
         {
-          "color": "#B6533C",
-          "name": "Ceglasty",
+          "color": "#C85D45",
+          "name": "Koral",
           "slug": "brick"
         },
         {
@@ -115,13 +125,13 @@
       "fluid": true,
       "fontFamilies": [
         {
-          "fontFamily": "\"Source Sans 3\", \"Segoe UI\", sans-serif",
+          "fontFamily": "\"Aptos\", \"Segoe UI Variable\", \"Segoe UI\", sans-serif",
           "name": "Tekst podstawowy",
           "slug": "body"
         },
         {
-          "fontFamily": "\"Nunito Sans\", \"Segoe UI\", sans-serif",
-          "name": "Nagłówki",
+          "fontFamily": "\"Aptos Display\", \"Segoe UI Variable Display\", \"Segoe UI\", sans-serif",
+          "name": "Nagłówki nowoczesne",
           "slug": "heading"
         }
       ],

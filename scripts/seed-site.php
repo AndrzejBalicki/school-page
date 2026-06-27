@@ -60,6 +60,51 @@ function school_page_seed_page( $title, $slug, $content, $parent = 0 ) {
 	return (int) $page_id;
 }
 
+/**
+ * Create a representative news post when it does not exist.
+ *
+ * @param string $title   Post title.
+ * @param string $slug    Post slug.
+ * @param string $excerpt Short card description.
+ * @param string $content Initial post content.
+ * @param string $date    Publication date in local time.
+ * @return int Post ID.
+ */
+function school_page_seed_post( $title, $slug, $excerpt, $content, $date ) {
+	$existing_posts = get_posts(
+		array(
+			'name'             => $slug,
+			'numberposts'      => 1,
+			'post_status'      => 'any',
+			'post_type'        => 'post',
+			'suppress_filters' => false,
+		)
+	);
+
+	if ( ! empty( $existing_posts ) && $existing_posts[0] instanceof WP_Post ) {
+		return (int) $existing_posts[0]->ID;
+	}
+
+	$post_id = wp_insert_post(
+		array(
+			'post_content' => $content,
+			'post_date'    => $date,
+			'post_excerpt' => $excerpt,
+			'post_name'    => $slug,
+			'post_status'  => 'publish',
+			'post_title'   => $title,
+			'post_type'    => 'post',
+		),
+		true
+	);
+
+	if ( is_wp_error( $post_id ) ) {
+		throw new RuntimeException( $post_id->get_error_message() );
+	}
+
+	return (int) $post_id;
+}
+
 update_option( 'blogname', 'Przedszkole Publiczne św. Józefa' );
 update_option( 'blogdescription', 'Ciepło, rozwój i wartości' );
 update_option( 'timezone_string', 'Europe/Warsaw' );
@@ -158,6 +203,30 @@ school_page_seed_page(
 	'Polityka prywatności',
 	'polityka-prywatnosci',
 	'<!-- wp:paragraph --><p>Treść polityki wymaga zatwierdzenia przez administratora danych.</p><!-- /wp:paragraph -->'
+);
+
+school_page_seed_post(
+	'Gra terenowa pełna radości',
+	'gra-terenowa-pelna-radosci',
+	'Tajemnicze wskazówki, współpraca i mnóstwo ruchu na świeżym powietrzu.',
+	'<!-- wp:paragraph --><p>Przedszkolny ogród zamienił się w mapę pełną zadań. Dzieci wspólnie szukały tropów, rozwiązywały zagadki i odkrywały, że najlepsze przygody powstają dzięki współpracy.</p><!-- /wp:paragraph -->',
+	'2026-06-24 10:00:00'
+);
+
+school_page_seed_post(
+	'Moje ulubione miejsce na Słocinie',
+	'moje-ulubione-miejsce-na-slocinie',
+	'Małe spojrzenia na naszą dzielnicę — opowiedziane obrazem i dziecięcą wyobraźnią.',
+	'<!-- wp:paragraph --><p>Podczas spacerów dzieci przyglądały się miejscom, które mijają każdego dnia. Potem stworzyły barwne prace i opowiedziały, dlaczego właśnie te zakątki są dla nich wyjątkowe.</p><!-- /wp:paragraph -->',
+	'2026-06-18 10:00:00'
+);
+
+school_page_seed_post(
+	'Warsztaty fizyczne — nauka przez zabawę',
+	'warsztaty-fizyczne-nauka-przez-zabawe',
+	'Czy powietrze może coś unieść? Sprawdzaliśmy, pytaliśmy i eksperymentowaliśmy.',
+	'<!-- wp:paragraph --><p>Proste doświadczenia stały się początkiem wielkich pytań. Dzieci obserwowały, przewidywały wyniki i z radością odkrywały prawa, które rządzą światem.</p><!-- /wp:paragraph -->',
+	'2026-06-12 10:00:00'
 );
 
 update_option( 'show_on_front', 'page' );

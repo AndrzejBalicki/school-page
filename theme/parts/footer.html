@@ -1,52 +1,78 @@
-<!-- wp:group {"align":"full","className":"school-footer","backgroundColor":"primary","textColor":"white","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull school-footer has-white-color has-primary-background-color has-text-color has-background" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--40)">
-	<!-- wp:columns {"align":"wide","className":"school-footer__inner"} -->
-	<div class="wp-block-columns alignwide school-footer__inner">
-		<!-- wp:column -->
-		<div class="wp-block-column">
+<!-- wp:group {"align":"full","className":"school-footer premium-footer","backgroundColor":"primary","textColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull school-footer premium-footer has-white-color has-primary-background-color has-text-color has-background">
+	<!-- wp:group {"align":"wide","className":"premium-footer__lead","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+	<div class="wp-block-group alignwide premium-footer__lead">
+		<!-- wp:heading {"level":2,"textColor":"white"} -->
+		<h2 class="wp-block-heading has-white-color has-text-color">Dobry dzień <em>zaczyna się tutaj.</em></h2>
+		<!-- /wp:heading -->
+
+		<!-- wp:buttons -->
+		<div class="wp-block-buttons">
+			<!-- wp:button {"backgroundColor":"gold","textColor":"text"} -->
+			<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-gold-background-color has-text-color has-background wp-element-button" href="/kontakt/">Porozmawiajmy</a></div>
+			<!-- /wp:button -->
+		</div>
+		<!-- /wp:buttons -->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:separator {"align":"wide","backgroundColor":"sage","className":"is-style-wide"} -->
+	<hr class="wp-block-separator alignwide has-text-color has-sage-color has-alpha-channel-opacity has-sage-background-color has-background is-style-wide">
+	<!-- /wp:separator -->
+
+	<!-- wp:columns {"align":"wide","className":"premium-footer__columns"} -->
+	<div class="wp-block-columns alignwide premium-footer__columns">
+		<!-- wp:column {"width":"36%"} -->
+		<div class="wp-block-column" style="flex-basis:36%">
 			<!-- wp:site-title {"level":0,"textColor":"white","fontSize":"large"} /-->
 
 			<!-- wp:paragraph -->
-			<p>Przedszkole Publiczne św. Józefa<br>ul. Paderewskiego 71<br>35-330 Rzeszów</p>
+			<p>Przedszkole, w którym rozwój dziecka spotyka się z ciepłem, uważnością i chrześcijańskimi wartościami.</p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:column -->
 
 		<!-- wp:column -->
 		<div class="wp-block-column">
-			<!-- wp:heading {"level":2,"textColor":"white","fontSize":"large"} -->
-			<h2 class="wp-block-heading has-white-color has-text-color has-large-font-size">Kontakt</h2>
+			<!-- wp:heading {"level":3,"textColor":"white","fontSize":"medium"} -->
+			<h3 class="wp-block-heading has-white-color has-text-color has-medium-font-size">Kontakt</h3>
 			<!-- /wp:heading -->
 
 			<!-- wp:paragraph -->
-			<p><a href="tel:+48178571816">+48 17 857 18 16</a><br><a href="mailto:przejoz@op.pl">przejoz@op.pl</a></p>
+			<p>ul. Paderewskiego 71<br>35-330 Rzeszów<br><a href="tel:+48178571816">+48 17 857 18 16</a><br><a href="mailto:przejoz@op.pl">przejoz@op.pl</a></p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:column -->
 
 		<!-- wp:column -->
 		<div class="wp-block-column">
-			<!-- wp:heading {"level":2,"textColor":"white","fontSize":"large"} -->
-			<h2 class="wp-block-heading has-white-color has-text-color has-large-font-size">Ważne linki</h2>
+			<!-- wp:heading {"level":3,"textColor":"white","fontSize":"medium"} -->
+			<h3 class="wp-block-heading has-white-color has-text-color has-medium-font-size">Dla rodziców</h3>
 			<!-- /wp:heading -->
 
-			<!-- wp:list {"className":"school-footer__links"} -->
-			<ul class="school-footer__links">
-				<!-- wp:list-item -->
-				<li><a href="/rekrutacja/">Rekrutacja</a></li>
-				<!-- /wp:list-item -->
+			<!-- wp:list {"className":"premium-footer__links"} -->
+			<ul class="premium-footer__links">
+				<!-- wp:list-item --><li><a href="/kalendarium/">Kalendarium</a></li><!-- /wp:list-item -->
+				<!-- wp:list-item --><li><a href="/oplaty/">Opłaty</a></li><!-- /wp:list-item -->
+				<!-- wp:list-item --><li><a href="/jadlospis/">Jadłospis</a></li><!-- /wp:list-item -->
+				<!-- wp:list-item --><li><a href="/dokumenty/">Dokumenty</a></li><!-- /wp:list-item -->
+			</ul>
+			<!-- /wp:list -->
+		</div>
+		<!-- /wp:column -->
 
-				<!-- wp:list-item -->
-				<li><a href="/deklaracja-dostepnosci/">Deklaracja dostępności</a></li>
-				<!-- /wp:list-item -->
+		<!-- wp:column -->
+		<div class="wp-block-column">
+			<!-- wp:heading {"level":3,"textColor":"white","fontSize":"medium"} -->
+			<h3 class="wp-block-heading has-white-color has-text-color has-medium-font-size">Informacje</h3>
+			<!-- /wp:heading -->
 
-				<!-- wp:list-item -->
-				<li><a href="/polityka-prywatnosci/">Polityka prywatności</a></li>
-				<!-- /wp:list-item -->
-
-				<!-- wp:list-item -->
-				<li><a href="https://edziecko.edu.pl/">E-Dziecko</a></li>
-				<!-- /wp:list-item -->
+			<!-- wp:list {"className":"premium-footer__links"} -->
+			<ul class="premium-footer__links">
+				<!-- wp:list-item --><li><a href="/rekrutacja/">Rekrutacja</a></li><!-- /wp:list-item -->
+				<!-- wp:list-item --><li><a href="/deklaracja-dostepnosci/">Dostępność</a></li><!-- /wp:list-item -->
+				<!-- wp:list-item --><li><a href="/polityka-prywatnosci/">Prywatność</a></li><!-- /wp:list-item -->
+				<!-- wp:list-item --><li><a href="https://edziecko.edu.pl/">E-Dziecko ↗</a></li><!-- /wp:list-item -->
 			</ul>
 			<!-- /wp:list -->
 		</div>
@@ -54,12 +80,16 @@
 	</div>
 	<!-- /wp:columns -->
 
-	<!-- wp:separator {"align":"wide","backgroundColor":"sage","className":"is-style-wide"} -->
-	<hr class="wp-block-separator alignwide has-text-color has-sage-color has-alpha-channel-opacity has-sage-background-color has-background is-style-wide">
-	<!-- /wp:separator -->
+	<!-- wp:group {"align":"wide","className":"premium-footer__bottom","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+	<div class="wp-block-group alignwide premium-footer__bottom">
+		<!-- wp:paragraph {"fontSize":"small"} -->
+		<p class="has-small-font-size">© Przedszkole Publiczne św. Józefa w Rzeszowie</p>
+		<!-- /wp:paragraph -->
 
-	<!-- wp:paragraph {"align":"center","fontSize":"small"} -->
-	<p class="has-text-align-center has-small-font-size">Przedszkole Publiczne św. Józefa w Rzeszowie</p>
-	<!-- /wp:paragraph -->
+		<!-- wp:paragraph {"fontSize":"small"} -->
+		<p class="has-small-font-size">Poniedziałek–piątek · 6:30–17:00</p>
+		<!-- /wp:paragraph -->
+	</div>
+	<!-- /wp:group -->
 </div>
 <!-- /wp:group -->
