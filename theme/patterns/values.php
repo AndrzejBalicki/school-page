@@ -13,8 +13,8 @@
 	<div class="wp-block-group alignwide premium-values__intro">
 		<!-- wp:group {"layout":{"type":"constrained"}} -->
 		<div class="wp-block-group">
-			<!-- wp:paragraph {"className":"premium-kicker"} --><p class="premium-kicker">Dzieciństwo ma znaczenie</p><!-- /wp:paragraph -->
-			<!-- wp:heading {"level":2,"textColor":"white"} --><h2 class="wp-block-heading has-white-color has-text-color">Mądre korzenie.<br>Odważne skrzydła.</h2><!-- /wp:heading -->
+			<!-- wp:paragraph {"className":"premium-kicker"} --><p class="premium-kicker">02 · Nasze podejście</p><!-- /wp:paragraph -->
+			<!-- wp:heading {"level":2,"textColor":"white"} --><h2 class="wp-block-heading has-white-color has-text-color">Mądre korzenie.<br><em>Odważne skrzydła.</em></h2><!-- /wp:heading -->
 		</div>
 		<!-- /wp:group -->
 

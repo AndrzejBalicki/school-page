@@ -13,8 +13,8 @@
 	<div class="wp-block-group alignwide premium-section-heading">
 		<!-- wp:group {"layout":{"type":"constrained"}} -->
 		<div class="wp-block-group">
-			<!-- wp:paragraph {"className":"premium-kicker"} --><p class="premium-kicker">Wszystko pod ręką</p><!-- /wp:paragraph -->
-			<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Rodzicu, od czego zaczynamy?</h2><!-- /wp:heading -->
+			<!-- wp:paragraph {"className":"premium-kicker"} --><p class="premium-kicker">01 · Dla rodziców</p><!-- /wp:paragraph -->
+			<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Rodzicu, <em>wszystko pod ręką.</em></h2><!-- /wp:heading -->
 		</div>
 		<!-- /wp:group -->
 

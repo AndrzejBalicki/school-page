@@ -13,8 +13,8 @@
 	<div class="wp-block-group alignwide premium-contact__panel has-white-color has-text-background-color has-text-color has-background">
 		<!-- wp:group {"className":"premium-contact__copy","layout":{"type":"constrained","justifyContent":"left"}} -->
 		<div class="wp-block-group premium-contact__copy">
-			<!-- wp:paragraph {"className":"premium-kicker"} --><p class="premium-kicker">Jesteśmy blisko</p><!-- /wp:paragraph -->
-			<!-- wp:heading {"level":2,"textColor":"white"} --><h2 class="wp-block-heading has-white-color has-text-color">Wpadnij, zadzwoń<br>albo po prostu napisz.</h2><!-- /wp:heading -->
+			<!-- wp:paragraph {"className":"premium-kicker"} --><p class="premium-kicker">04 · Jesteśmy blisko</p><!-- /wp:paragraph -->
+			<!-- wp:heading {"level":2,"textColor":"white"} --><h2 class="wp-block-heading has-white-color has-text-color">Wpadnij, zadzwoń<br><em>albo napisz.</em></h2><!-- /wp:heading -->
 			<!-- wp:paragraph --><p>Chętnie opowiemy o naszej codzienności i odpowiemy na pytania dotyczące rekrutacji.</p><!-- /wp:paragraph -->
 
 			<!-- wp:buttons -->

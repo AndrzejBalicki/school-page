@@ -1,8 +1,8 @@
 # Motyw „Przedszkole św. Józefa”
 
-Autorski motyw blokowy dla WordPressa 6.6 lub nowszego. Łączy redakcyjną
-typografię, pogodną paletę i lekką ilustrację SVG z prostym zarządzaniem
-treścią w edytorze witryny.
+Autorski motyw blokowy dla WordPressa 6.6 lub nowszego. Łączy nowoczesną
+typografię editorial, pogodną paletę, modułową siatkę i lekką ilustrację SVG
+z prostym zarządzaniem treścią w edytorze witryny.
 
 ## Instalacja ręczna
 
@@ -25,7 +25,7 @@ go ponownie bez utraty pracy redaktorów.
 ## Obecny zakres
 
 - globalna paleta, typografia i odstępy w `theme.json`;
-- responsywny nagłówek, pełnoekranowe menu mobilne i rozbudowana stopka;
+- przyklejony responsywny nagłówek, pełnoekranowe menu mobilne i stopka;
 - premium strona główna z autorską ilustracją;
 - szablony strony, wpisu, archiwum i błędu 404;
 - wzorce komunikatu, skrótów, wartości, aktualności i kontaktu;

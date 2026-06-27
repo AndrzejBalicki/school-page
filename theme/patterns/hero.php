@@ -14,7 +14,7 @@
 		<!-- wp:group {"className":"premium-hero__content","layout":{"type":"constrained","justifyContent":"left"}} -->
 		<div class="wp-block-group premium-hero__content">
 			<!-- wp:paragraph {"className":"premium-eyebrow"} -->
-			<p class="premium-eyebrow"><span>●</span> Przedszkole Publiczne św. Józefa · Rzeszów</p>
+			<p class="premium-eyebrow"><span>●</span> Przedszkole Publiczne · Rzeszów · od 1924</p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:heading {"level":1,"className":"premium-hero__title"} -->

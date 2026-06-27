@@ -130,8 +130,8 @@
           "slug": "body"
         },
         {
-          "fontFamily": "\"Iowan Old Style\", \"Palatino Linotype\", \"Book Antiqua\", Georgia, serif",
-          "name": "Nagłówki editorial",
+          "fontFamily": "\"Aptos Display\", \"Segoe UI Variable Display\", \"Segoe UI\", sans-serif",
+          "name": "Nagłówki nowoczesne",
           "slug": "heading"
         }
       ],

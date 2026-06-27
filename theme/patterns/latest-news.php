@@ -13,8 +13,8 @@
 	<div class="wp-block-group alignwide premium-section-heading premium-section-heading--news">
 		<!-- wp:group {"layout":{"type":"constrained"}} -->
 		<div class="wp-block-group">
-			<!-- wp:paragraph {"className":"premium-kicker"} --><p class="premium-kicker">Z życia przedszkola</p><!-- /wp:paragraph -->
-			<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Codziennie wydarza się coś dobrego.</h2><!-- /wp:heading -->
+			<!-- wp:paragraph {"className":"premium-kicker"} --><p class="premium-kicker">03 · Z życia przedszkola</p><!-- /wp:paragraph -->
+			<!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Codziennie wydarza się <em>coś dobrego.</em></h2><!-- /wp:heading -->
 		</div>
 		<!-- /wp:group -->
 

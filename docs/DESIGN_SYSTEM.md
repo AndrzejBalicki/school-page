@@ -1,10 +1,11 @@
 # System wizualny
 
-## Kierunek: ciepły editorial
+## Kierunek: nowoczesny editorial
 
-Strona łączy wiarygodność placówki z energią dzieciństwa. Duże, redakcyjne
-nagłówki nadają jej własny charakter, a proste ilustracje, miękkie kształty
-i kolorowe karty budują pogodny klimat bez infantylności.
+Strona łączy wiarygodność placówki z energią dzieciństwa. Duże, nowoczesne
+nagłówki bezszeryfowe budują hierarchię, a selektywne akcenty kursywą,
+techniczne etykiety sekcji, subtelna siatka i kolorowe panele nadają całości
+współczesny charakter bez korporacyjnego chłodu.
 
 Najważniejsze zasady:
 
@@ -34,9 +35,11 @@ niebieski i różowy zawsze otrzymują ciemny tekst.
 
 ## Typografia
 
-- nagłówki: systemowy krój editorial — `Iowan Old Style`, `Palatino Linotype`,
-  `Book Antiqua`, `Georgia`, serif;
+- nagłówki: `Aptos Display`, `Segoe UI Variable Display`, `Segoe UI`, sans-serif;
+- wyróżnione fragmenty nagłówków: kursywa `Iowan Old Style`,
+  `Palatino Linotype`, `Georgia`, serif;
 - tekst i interfejs: `Aptos`, `Segoe UI Variable`, `Segoe UI`, sans-serif;
+- etykiety i numeracja sekcji: `Cascadia Mono`, `Consolas`, monospace;
 - tekst podstawowy: 17–18 px, interlinia około 1,6;
 - nagłówek hero jest płynny i dopasowuje się do szerokości ekranu;
 - szerokość dłuższego tekstu nie przekracza około 65 znaków;
@@ -46,15 +49,16 @@ niebieski i różowy zawsze otrzymują ciemny tekst.
 ## Kształty i odstępy
 
 - skala odstępów: `4, 8, 12, 16, 24, 32, 48, 64, 96`;
-- duże sekcje mają zaokrąglenia 28–56 px;
-- karty korzystają z miękkich cieni i cienkich, półprzezroczystych obramowań;
+- duże sekcje mają zaokrąglenia 18–28 px;
+- karty korzystają przede wszystkim z cienkich obramowań; cień pojawia się
+  oszczędnie przy elementach interaktywnych;
 - przyciski główne są zwarte, czytelne i mają obszar dotykowy minimum 44 px;
-- elementy dekoracyjne mogą być lekko obrócone, ale tekst pozostaje prosty.
+- siatka 64 × 64 px porządkuje duże powierzchnie i łączy kolejne sekcje.
 
 ## Komponenty
 
 - pasek szybkiego kontaktu;
-- nagłówek z sygnetem i rozwijanym menu;
+- przyklejony nagłówek w formie lekkiego panelu i rozwijane menu;
 - asymetryczny hero z ilustracją SVG;
 - komunikat rekrutacyjny;
 - cztery kolorowe skróty dla rodziców;
