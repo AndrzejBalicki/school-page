@@ -41,3 +41,17 @@ Etap 0 — przygotowanie repozytorium, dokumentacji i zasad pracy.
 
 Zmiany wykonujemy na osobnych gałęziach i włączamy do `main` przez pull
 request. Zasady pracy opisuje plik [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Walidacja motywu
+
+Walidator nie wymaga instalowania zależności npm:
+
+```bash
+npm run validate
+```
+
+Sprawdza wymagane pliki, poprawność `theme.json`, metadane motywu, parowanie
+komentarzy bloków WordPress oraz puste odnośniki `href="#"`.
+
+Ta sama kontrola uruchamia się automatycznie w GitHub Actions dla każdego
+pull requestu i aktualizacji gałęzi `main`.

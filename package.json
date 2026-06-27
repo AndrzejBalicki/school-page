@@ -1,0 +1,12 @@
+{
+  "name": "school-page",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate-theme.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

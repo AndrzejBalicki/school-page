@@ -1,0 +1,250 @@
+/*
+Theme Name: Przedszkole św. Józefa
+Theme URI: https://github.com/AndrzejBalicki/school-page
+Author: Andrzej Balicki
+Description: Dostępny motyw blokowy dla Przedszkola Publicznego św. Józefa w Rzeszowie.
+Version: 0.1.5
+Requires at least: 6.6
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: school-page
+*/
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	overflow-wrap: break-word;
+}
+
+a {
+	text-underline-offset: 0.18em;
+	text-decoration-thickness: 0.08em;
+}
+
+a:hover {
+	text-decoration-thickness: 0.14em;
+}
+
+:where(a, button, input, select, textarea, [tabindex]):focus-visible {
+	outline: 3px solid var(--wp--preset--color--gold);
+	outline-offset: 4px;
+}
+
+.school-utility-bar {
+	color: var(--wp--preset--color--white);
+	font-size: var(--wp--preset--font-size--small);
+}
+
+.school-utility-bar :where(p, a) {
+	color: var(--wp--preset--color--white) !important;
+}
+
+.school-header__inner,
+.school-footer__inner,
+.school-section {
+	padding-left: var(--wp--preset--spacing--40);
+	padding-right: var(--wp--preset--spacing--40);
+}
+
+.school-header__inner {
+	min-height: 6rem;
+}
+
+.school-primary-nav .wp-block-navigation-item__content {
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.school-primary-nav .wp-block-navigation-item__content:hover {
+	text-decoration: underline;
+}
+
+.wp-block-navigation__responsive-container.is-menu-open {
+	padding: var(--wp--preset--spacing--50) var(--wp--preset--spacing--40);
+}
+
+.wp-block-navigation__responsive-container.is-menu-open
+	.wp-block-navigation__responsive-container-content,
+.wp-block-navigation__responsive-container.is-menu-open
+	.school-primary-nav,
+.wp-block-navigation__responsive-container.is-menu-open
+	.wp-block-navigation-item {
+	align-items: flex-start !important;
+	width: 100%;
+}
+
+.wp-block-navigation__responsive-container.is-menu-open
+	.wp-block-navigation__responsive-container-content {
+	padding: 3.5rem var(--wp--preset--spacing--40) var(--wp--preset--spacing--40) !important;
+}
+
+.wp-block-navigation__responsive-container.is-menu-open
+	.wp-block-navigation__container {
+	align-items: flex-start !important;
+}
+
+.wp-block-navigation__responsive-container.is-menu-open
+	.wp-block-navigation__submenu-container {
+	padding-left: var(--wp--preset--spacing--30);
+}
+
+.school-hero {
+	background:
+		radial-gradient(circle at 90% 10%, rgb(232 184 74 / 26%), transparent 28rem),
+		var(--wp--preset--color--cream);
+}
+
+.school-hero__grid {
+	display: grid;
+	gap: var(--wp--preset--spacing--60);
+	grid-template-columns: minmax(0, 1.35fr) minmax(16rem, 0.65fr);
+}
+
+.school-hero__eyebrow {
+	color: var(--wp--preset--color--primary);
+	font-size: var(--wp--preset--font-size--small);
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.school-hero__card {
+	align-self: center;
+	background: var(--wp--preset--color--sage);
+	border: 1px solid rgb(31 93 66 / 18%);
+	border-radius: 1.5rem;
+	box-shadow: 0 1.25rem 3rem rgb(36 49 43 / 10%);
+	padding: var(--wp--preset--spacing--50);
+}
+
+.school-alert {
+	border-left: 0.5rem solid var(--wp--preset--color--brick);
+	border-radius: 0.75rem;
+	box-shadow: 0 0.75rem 2rem rgb(36 49 43 / 8%);
+}
+
+.school-quick-links {
+	display: grid;
+	gap: var(--wp--preset--spacing--30);
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.school-quick-link {
+	border: 1px solid rgb(31 93 66 / 18%);
+	border-radius: 1rem;
+	min-height: 100%;
+	padding: var(--wp--preset--spacing--40);
+}
+
+.school-quick-link a {
+	display: inline-block;
+	font-weight: 700;
+}
+
+.school-post-grid .wp-block-post {
+	background: var(--wp--preset--color--white);
+	border: 1px solid rgb(31 93 66 / 16%);
+	border-radius: 1rem;
+	overflow: hidden;
+}
+
+.school-post-grid .wp-block-post > :not(.wp-block-post-featured-image) {
+	margin-left: var(--wp--preset--spacing--30);
+	margin-right: var(--wp--preset--spacing--30);
+}
+
+.school-post-grid .wp-block-post-excerpt {
+	margin-bottom: var(--wp--preset--spacing--40);
+}
+
+.school-contact-grid {
+	display: grid;
+	gap: var(--wp--preset--spacing--50);
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.school-footer :where(p, h2, a) {
+	color: var(--wp--preset--color--white) !important;
+}
+
+.school-footer__links {
+	list-style: none;
+	padding-left: 0;
+}
+
+.school-footer__links li + li {
+	margin-top: 0.5rem;
+}
+
+.wp-block-button__link {
+	transition:
+		background-color 160ms ease,
+		color 160ms ease,
+		transform 160ms ease;
+}
+
+.wp-block-button__link:hover {
+	transform: translateY(-2px);
+}
+
+@media (max-width: 48rem) {
+	.school-header__inner,
+	.school-footer__inner,
+	.school-section {
+		padding-left: var(--wp--preset--spacing--30);
+		padding-right: var(--wp--preset--spacing--30);
+	}
+
+	.school-utility-bar__inner {
+		align-items: flex-start;
+		flex-direction: column;
+		gap: 0.35rem;
+	}
+
+	.school-hero__grid,
+	.school-contact-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.school-quick-links {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (max-width: 32rem) {
+	.school-quick-links {
+		grid-template-columns: 1fr;
+	}
+
+	.wp-block-buttons {
+		align-items: stretch;
+		flex-direction: column;
+	}
+
+	.wp-block-button,
+	.wp-block-button__link {
+		width: 100%;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		scroll-behavior: auto !important;
+		transition-duration: 0.01ms !important;
+	}
+}
