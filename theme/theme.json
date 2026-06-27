@@ -1,0 +1,293 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "background": {
+      "backgroundImage": false
+    },
+    "color": {
+      "custom": false,
+      "customDuotone": false,
+      "customGradient": false,
+      "defaultDuotone": false,
+      "defaultGradients": false,
+      "defaultPalette": false,
+      "palette": [
+        {
+          "color": "#1F5D42",
+          "name": "Zieleń główna",
+          "slug": "primary"
+        },
+        {
+          "color": "#FFF8EA",
+          "name": "Kremowe tło",
+          "slug": "cream"
+        },
+        {
+          "color": "#24312B",
+          "name": "Tekst",
+          "slug": "text"
+        },
+        {
+          "color": "#DDEBDD",
+          "name": "Jasna szałwia",
+          "slug": "sage"
+        },
+        {
+          "color": "#E8B84A",
+          "name": "Ciepłe złoto",
+          "slug": "gold"
+        },
+        {
+          "color": "#B6533C",
+          "name": "Ceglasty",
+          "slug": "brick"
+        },
+        {
+          "color": "#FFFFFF",
+          "name": "Biel",
+          "slug": "white"
+        }
+      ]
+    },
+    "layout": {
+      "contentSize": "46rem",
+      "wideSize": "75rem"
+    },
+    "shadow": {
+      "defaultPresets": false,
+      "presets": [
+        {
+          "name": "Delikatny",
+          "shadow": "0 0.75rem 2rem rgb(36 49 43 / 10%)",
+          "slug": "soft"
+        }
+      ]
+    },
+    "spacing": {
+      "blockGap": true,
+      "customSpacingSize": false,
+      "defaultSpacingSizes": false,
+      "spacingSizes": [
+        {
+          "name": "Bardzo mały",
+          "size": "0.5rem",
+          "slug": "20"
+        },
+        {
+          "name": "Mały",
+          "size": "1rem",
+          "slug": "30"
+        },
+        {
+          "name": "Średni",
+          "size": "1.5rem",
+          "slug": "40"
+        },
+        {
+          "name": "Duży",
+          "size": "2rem",
+          "slug": "50"
+        },
+        {
+          "name": "Bardzo duży",
+          "size": "3rem",
+          "slug": "60"
+        },
+        {
+          "name": "Sekcja",
+          "size": "clamp(3.5rem, 8vw, 6rem)",
+          "slug": "70"
+        }
+      ],
+      "units": [
+        "px",
+        "rem",
+        "%",
+        "vw"
+      ]
+    },
+    "typography": {
+      "customFontSize": false,
+      "defaultFontSizes": false,
+      "dropCap": false,
+      "fluid": true,
+      "fontFamilies": [
+        {
+          "fontFamily": "\"Source Sans 3\", \"Segoe UI\", sans-serif",
+          "name": "Tekst podstawowy",
+          "slug": "body"
+        },
+        {
+          "fontFamily": "\"Nunito Sans\", \"Segoe UI\", sans-serif",
+          "name": "Nagłówki",
+          "slug": "heading"
+        }
+      ],
+      "fontSizes": [
+        {
+          "fluid": false,
+          "name": "Mały",
+          "size": "0.9375rem",
+          "slug": "small"
+        },
+        {
+          "fluid": {
+            "max": "1.125rem",
+            "min": "1.0625rem"
+          },
+          "name": "Podstawowy",
+          "size": "1.125rem",
+          "slug": "medium"
+        },
+        {
+          "fluid": {
+            "max": "1.5rem",
+            "min": "1.25rem"
+          },
+          "name": "Duży",
+          "size": "1.5rem",
+          "slug": "large"
+        },
+        {
+          "fluid": {
+            "max": "2.25rem",
+            "min": "1.75rem"
+          },
+          "name": "Nagłówek sekcji",
+          "size": "2.25rem",
+          "slug": "x-large"
+        },
+        {
+          "fluid": {
+            "max": "4.5rem",
+            "min": "2.5rem"
+          },
+          "name": "Tytuł strony",
+          "size": "4.5rem",
+          "slug": "display"
+        }
+      ]
+    },
+    "useRootPaddingAwareAlignments": true
+  },
+  "styles": {
+    "blocks": {
+      "core/button": {
+        "border": {
+          "radius": "0.75rem"
+        },
+        "typography": {
+          "fontWeight": "700"
+        }
+      },
+      "core/heading": {
+        "typography": {
+          "fontFamily": "var:preset|font-family|heading",
+          "fontWeight": "700",
+          "lineHeight": "1.15"
+        }
+      },
+      "core/navigation": {
+        "typography": {
+          "fontFamily": "var:preset|font-family|body",
+          "fontSize": "1rem"
+        }
+      },
+      "core/post-title": {
+        "typography": {
+          "fontFamily": "var:preset|font-family|heading",
+          "fontWeight": "700",
+          "lineHeight": "1.2"
+        }
+      }
+    },
+    "color": {
+      "background": "var:preset|color|cream",
+      "text": "var:preset|color|text"
+    },
+    "elements": {
+      "button": {
+        ":focus": {
+          "outline": {
+            "color": "var:preset|color|gold",
+            "offset": "4px",
+            "style": "solid",
+            "width": "3px"
+          }
+        },
+        ":hover": {
+          "color": {
+            "background": "var:preset|color|text",
+            "text": "var:preset|color|white"
+          }
+        },
+        "color": {
+          "background": "var:preset|color|primary",
+          "text": "var:preset|color|white"
+        },
+        "spacing": {
+          "padding": {
+            "bottom": "0.8rem",
+            "left": "1.25rem",
+            "right": "1.25rem",
+            "top": "0.8rem"
+          }
+        }
+      },
+      "heading": {
+        "color": {
+          "text": "var:preset|color|primary"
+        },
+        "typography": {
+          "fontFamily": "var:preset|font-family|heading",
+          "fontWeight": "700",
+          "lineHeight": "1.15"
+        }
+      },
+      "link": {
+        ":focus": {
+          "outline": {
+            "color": "var:preset|color|gold",
+            "offset": "4px",
+            "style": "solid",
+            "width": "3px"
+          }
+        },
+        "color": {
+          "text": "var:preset|color|primary"
+        },
+        "typography": {
+          "textDecoration": "underline"
+        }
+      }
+    },
+    "spacing": {
+      "blockGap": "1.5rem",
+      "padding": {
+        "bottom": "0",
+        "left": "var:preset|spacing|40",
+        "right": "var:preset|spacing|40",
+        "top": "0"
+      }
+    },
+    "typography": {
+      "fontFamily": "var:preset|font-family|body",
+      "fontSize": "var:preset|font-size|medium",
+      "lineHeight": "1.6"
+    }
+  },
+  "templateParts": [
+    {
+      "area": "header",
+      "name": "header",
+      "title": "Nagłówek"
+    },
+    {
+      "area": "footer",
+      "name": "footer",
+      "title": "Stopka"
+    }
+  ]
+}

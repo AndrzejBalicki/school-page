@@ -14,10 +14,10 @@
 
 - [ ] potwierdzenie danych hostingu i wersji PHP;
 - [ ] wybór lokalnego środowiska WordPress;
-- [ ] utworzenie struktury motywu blokowego;
-- [ ] konfiguracja `theme.json`;
-- [ ] podstawowy nagłówek, stopka i szablon strony;
-- [ ] automatyczne formatowanie i linting;
+- [x] utworzenie struktury motywu blokowego;
+- [x] konfiguracja `theme.json`;
+- [x] podstawowy nagłówek, stopka i szablon strony;
+- [x] podstawowa walidacja bez zewnętrznych zależności;
 - [ ] pierwsze uruchomienie lokalne.
 
 ## Etap 2 — prototyp strony głównej
